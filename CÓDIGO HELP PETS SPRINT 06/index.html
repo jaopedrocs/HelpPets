@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pet-gallery">
+        <div class="pet-card" data-novo="true" data-especie="cachorro" data-porte="grande" data-foto="bx.jpg" data-descricao="Max é um cão enérgico e brincalhão, adora correr e precisa de espaço para gastar energia." data-avaliacao="5">
+            <div class="pet-label novo">Novo</div>
+            <div class="pet-species">🐶</div>
+            <div class="pet-info">
+                <h3>Max</h3>
+                <p>Porte: Grande</p>
+                <button class="contact-owner">Conversar com o dono</button>
+            </div>
+        </div>
+
+        <div class="pet-card" data-novo="false" data-especie="gato" data-porte="pequeno" data-foto="ct.jpg" data-descricao="Luna é uma gatinha muito dócil e carinhosa. Gosta de ficar no colo e é muito tranquila." data-avaliacao="4.5">
+            <div class="pet-species">🐱</div>
+            <div class="pet-info">
+                <h3>Luna</h3>
+                <p>Porte: Pequeno</p>
+                <button class="contact-owner">Conversar com o dono</button>
+            </div>
+        </div>
+
+        <div class="pet-card" data-novo="true" data-especie="reptil" data-porte="médio" data-foto="ig.jpg" data-descricao="Spike é um réptil calmo, ideal para quem deseja um pet exótico e fácil de cuidar." data-avaliacao="4">
+            <div class="pet-label novo">Novo</div>
+            <div class="pet-species">🦎</div>
+            <div class="pet-info">
+                <h3>Spike</h3>
+                <p>Porte: Médio</p>
+                <button class="contact-owner">Conversar com o dono</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="petModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="petImage" src="" alt="Foto do Pet">
+            <h3 id="petName"></h3>
+            <p id="petDescription"></p>
+            <p id="petRating"></p>
+
+            <button class="contact-owner modal-button">Conversar com o dono</button>
+
+            <div class="comment-section">
+                <h4>Comentários</h4>
+                <ul id="commentList"></ul>
+                <textarea id="commentInput" placeholder="Escreva um comentário..."></textarea>
+                <button id="submitComment">Enviar Comentário</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
